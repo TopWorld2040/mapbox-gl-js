@@ -399,7 +399,7 @@ class SymbolBucket implements Bucket {
     uploaded: boolean;
     collisionCircle: SymbolBuffers;
 
-    constructor(options: SymbolBucketParameters) {
+    constructor(options: any) {
         this.collisionBoxArray = options.collisionBoxArray;
         this.zoom = options.zoom;
         this.overscaling = options.overscaling;
