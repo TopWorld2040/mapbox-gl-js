@@ -334,7 +334,8 @@ const subclasses = {
     'line': require('./style_layer/line_style_layer'),
     'symbol': require('./style_layer/symbol_style_layer'),
     'background': require('./style_layer/background_style_layer'),
-    'raster': require('./style_layer/raster_style_layer')
+    'raster': require('./style_layer/raster_style_layer'),
+    'hillshade': require('./style_layer/raster_style_layer')
 };
 
 StyleLayer.create = function(layer: LayerSpecification) {
