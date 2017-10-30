@@ -335,7 +335,8 @@ const subclasses = {
     'symbol': require('./style_layer/symbol_style_layer'),
     'background': require('./style_layer/background_style_layer'),
     'raster': require('./style_layer/raster_style_layer'),
-    'hillshade': require('./style_layer/raster_style_layer')
+    'hillshade': require('./style_layer/raster_style_layer'),
+    'mesh-dem': require('./style_layer/raster_style_layer')
 };
 
 StyleLayer.create = function(layer: LayerSpecification) {
