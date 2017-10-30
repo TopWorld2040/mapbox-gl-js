@@ -515,9 +515,10 @@ class Transform {
 
         // scale vertically to meters per pixel (inverse of ground resolution):
         // worldSize / (circumferenceOfEarth * cos(lat * π / 180))
+        // I wonder
         const verticalScale = this.worldSize / (2 * Math.PI * 6378137 * Math.abs(Math.cos(this.center.lat * (Math.PI / 180))));
         mat4.scale(m, m, [1, 1, verticalScale, 1]);
-
+        
         this.projMatrix = m;
 
         // matrix for conversion from location to screen coordinates
